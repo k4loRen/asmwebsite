@@ -1,0 +1,312 @@
+
+<!-- SignupModal -->
+<div class="loginmodal modal fade" id="signupModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="sportsmagazine-login-box">
+            <a href="#" data-dismiss="modal" class="sportsmagazine-login-close sportsmagazine-color"><i class="icon-uniF106"></i></a>
+            <h4>S'inscrire dès maintenant</h4>
+            <form>
+                <input type="text" value=" " onblur="if(this.value=='' ) { this.value='Nom et prénom' ; }" onfocus="if(this.value=='' ) { this.value='' ; }">
+                <input type="text" value=" " onblur="if(this.value=='' ) { this.value='Ville' ; } " onfocus="if(this.value=='Ville' ) { this.value='' ; }">
+                <input type="text" value="Confirm your " onblur="if(this.value=='' ) { this.value='Confirm your ' ; } " onfocus="if(this.value=='Confirm your ' ) { this.value='' ; }">
+                <a href="#" class="sportsmagazine-colorhover">Forget Password?</a>
+                <div class="clearfix"></div>
+                <label><input type="submit" value="Sign Up" class="sportsmagazine-bordercolor sportsmagazine-color"></label>
+            </form>
+            <h4>Try Our Socials Also</h4>
+            <ul class="login-network">
+                <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li class="sportsmagazine-twitter"><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li class="sportsmagazine-google-plus"><a href="#"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+            </ul>
+            <p>Not A Member Yet ? <a href="#" class="sportsmagazine-color">Login - Now !</a></p>
+        </div>
+    <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- LoginModal -->
+<div class="loginmodal modal fade" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="sportsmagazine-login-box">
+            <a href="#" data-dismiss="modal" class="sportsmagazine-login-close sportsmagazine-color"><i class="icon-uniF106"></i></a>
+            <h4>Connectez vous</h4>
+            <form>
+                <input type="text" value="Adresse mail" onblur="if(this.value=='Adresse mail' ) { this.value='Adresse mail' ; }" onfocus="if(this.value=='Adresse mail' ) { this.value='Adresse mail' ; }">
+                <input type="password" value="Mot de passe" onblur="if(this.value=='Mot de passe' ) { this.value='Mot de passe' ; } " onfocus="if(this.value=='Mot de passe' ) { this.value='Mot de passe' ; }">
+                <a href="#" class="sportsmagazine-colorhover">Mot de passe oublié?</a>
+                <div class="clearfix"></div>
+                <label><input type="submit" value="Connexion" class="sportsmagazine-bordercolor sportsmagazine-color"></label>
+            </form>
+            <!-- <h4>Try Our Socials Also</h4>
+            <ul class="login-network">
+                <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li class="sportsmagazine-twitter"><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li class="sportsmagazine-google-plus"><a href="#"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+            </ul>
+            <p>Not A Member Yet ? <a href="#" class="sportsmagazine-color">Sign - Up Now !</a></p> -->
+        </div>
+    <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- SearchModal -->
+<div class="searchmodal modal fade" id="searchModal" tabindex="-1" role="dialog">
+    <a href="#" data-dismiss="modal" class="sportsmagazine-modal-close"><i class="icon-uniF106"></i></a>
+    <div class="modal-dialog" role="document ">
+        <div class="container">
+            <div class="row">
+                <form class="sportsmagazine-search-box">
+                    <input type="text" value="Recherche..." onblur="if(this.value=='' ) { this.value='Recherche...' ; }" onfocus="if(this.value=='Recherche...' ) { this.value='' ; }">
+                    <input type="submit" value=" ">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .gradient-background {
+    background: linear-gradient(240deg,#e7bd00,#1d1c1a,#b5710b,#0f0d0b);
+    background-size: 240% 240%;
+    animation: gradient-animation 8s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+</style>
+
+<!--// Header \\-->
+<header id="sportsmagazine-header" class="sportsmagazine-header-two">
+
+    <!--// TopStrip \\-->
+    <div class="sportsmagazine-topstrip-two sportsmagazine-bgcolor gradient-background">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-6">
+                    <span><small>INFORMATIONS</small> <i class="fa fa-caret-right"></i></span>
+                    <div class="sportsmagazine-ticker-slide" style="color: rgb(196, 128, 4);">
+                        <!-- <div class="sportsmagazine-colorhover">******* Site web en traveaux *******</div>
+                        <div class="sportsmagazine-colorhover">******* Ce site est en cours de construction *******</div> -->
+                    </div>
+                </aside>
+                <aside class="col-md-6">
+                    <ul class="sportsmagazine-user-link">
+                        <!-- <li><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fa fa-user"></i> S'inscrire </a></li> -->
+                        <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i> Identifiez vous </a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i> Recherche </a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!--// TopStrip \\-->
+
+    <!--// MainHeader \\-->
+    <div class="sportsmagazine-main-header">
+        <div class="container">
+            <div class="row">
+                <!-- <aside class="col-md-2">
+                    <a href="index.html" class="sportsmagazine-logo-two"><img height="0" src="images/logo-1.png" alt=""></a>
+                </aside> -->
+                <aside class="col-md-10">
+                    <ul class="header-info">
+                        <!-- <li>
+                            <i class="icon-technology52"></i>
+                            <span>+241 02 07 08 09</span>
+                            <a href="mailto:name@email.com">Téléphone</a>
+                        </li> -->
+                        <li>
+                            <i class="icon-location5"></i>
+                            <span>Libreville, GABON</span>
+                            <small>Localisation</small>
+                        </li>
+                        <li>
+                            <i class="icon-people22"></i>
+                            <span style="font-size:18px">Désiré MEBA ME FAMA</span>
+                            <small>Président</small>
+                        </li>
+                    </ul>
+                    <nav class="navbar navbar-default nav">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="true">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class=""><a href="/">ACCUEIL</a>
+                                    <ul class="sportsmagazine-dropdown-menu">
+                                        <li><a href="/">Page d'acceuil</a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a href="/articles/">ACTUALITÉS</a>
+
+                                </li>
+                                <li class=""><a href="boutique.html">BOUTIQUE</a>
+
+                                </li>
+                                <!-- <li class=""><a href="./file/asm.apk" download rel="noopener noreferrer" target="_blank">
+ASM MOBILE
+</a>
+
+                                </li> -->
+                                <!-- <li class="sportsmagazine-megamenu-li"><a href="#">FEATURES</a>
+                                    <ul class="sportsmagazine-megamenu">
+                                        <li class="row">
+                                            <div class="col-md-2">
+                                                <h4>Link 1</h4>
+                                                <ul class="sportsmagazine-megalist">
+                                                    <li><a href="fixture.html">Fixture List</a></li>
+                                                    <li><a href="fixture-wls.html">Fixture List W/L/S</a></li>
+                                                    <li><a href="fixture-wrs.html">Fixture List W/R/S</a></li>
+                                                    <li><a href="fixtures-dark1.html">Fixtures Classic</a></li>
+                                                    <li><a href="fixtures-dark2.html">Fixtures Modren</a></li>
+                                                    <li><a href="fixture-detail.html">Fixture Detail</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <h4>Link 2</h4>
+                                                <ul class="sportsmagazine-megalist">
+                                                    <li><a href="fixture-detail-wls.html">Fixture Detail W/L/S</a></li>
+                                                    <li><a href="gallery.html">Gallery Classic</a></li>
+                                                    <li><a href="gallery-wls.html">Gallery Classic W/L/S</a></li>
+                                                    <li><a href="gallery-wrs.html">Gallery Classic W/R/S</a></li>
+                                                    <li><a href="gallery-modren.html">Gallery Modren</a></li>
+                                                    <li><a href="gallery-modren-wls.html">Gallery Modren W/L/S</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <h4>Link 3</h4>
+                                                <ul class="sportsmagazine-megalist">
+                                                    <li><a href="gallery-modren-wrs.html">Gallery Modren W/R/S</a></li>
+                                                    <li><a href="login-register.html">Login Register</a></li>
+                                                    <li><a href="search-result.html">No Search Result</a></li>
+                                                    <li><a href="404.html">404 Error Page</a></li>
+                                                    <li><a href="faq.html">Faq</a></li>
+                                                    <li><a href="contact-us.html">Csontact Us</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="#" class="sportsmagazine-thumbnail">
+                                                    <img src="extra-images/megamenu-frame.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                              
+                                <li><a href="#">AS MINGASSANG</a>
+                                    <ul class="sportsmagazine-dropdown-menu">
+                                        <li><a href="liste_joueurs.html">Équipe A</a></li>
+                                        <li><a href="liste_joueurs.html">Équipe B</a></li>
+                                        <li><a href="liste_joueurs.html">Équipe féminine</a></li>
+                                        <li><a href="#">Académie</a></li>
+                                        <li><a href="#">Autres sport</a></li>
+                                        <li><a href="#">Histoire du club</a></li>
+                                        <!-- <li><a href="#">Assemblée Général</a></li> -->
+                                        <!-- <li><a href="shop-list-wls.html">Shop List W/L/S</a></li>
+                                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                        <li><a href="wishlist.html">WishList</a></li>
+                                        <li><a href="account.html">Account</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="shop-detail.html">Shop Detail</a>
+                                            <ul class="sportsmagazine-dropdown-menu">
+                                                <li><a href="shop-detail.html">Shop Detail W/R/S</a></li>
+                                                <li><a href="shop-detail-wls.html">Shop Detail W/L/S</a></li>
+                                            </ul>
+                                        </li> -->
+                                    </ul>
+                                </li>
+                                <li><a href="#">ADHÉSION</a>
+                                    <ul class="sportsmagazine-dropdown-menu">
+                                        <li><a href="#">Membres</a>
+                                            <ul class="sportsmagazine-dropdown-menu">
+                                                <li><a href="adhesion.html">Dévenir membre adhérent</a></li>
+                                                <li><a href="liste_adherents.html">Liste des membres</a></li>
+                                                <!-- <li><a href="blog-grid-wrs.html">Blog Grid W/R/S</a></li> -->
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">Parteners</a>
+                                            <ul class="sportsmagazine-dropdown-menu">
+                                                <li><a href="#">Dévenir Parteners</a></li>
+                                                <li><a href="#">Liste des Parteners</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">Fan club</a>
+                                            <ul class="sportsmagazine-dropdown-menu">
+                                                <li><a href="#">Liste des fans</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="#">Dirigeants</a></li>
+                                        <!-- <li><a href="blog-large-wls.html">Blog Large W/L/S</a></li>
+                                        <li><a href="blog-medium.html">Blog Medium</a></li>
+                                        <li><a href="blog-modren.html">Blog Modren</a> -->
+                                        <!-- <ul class="sportsmagazine-dropdown-menu">
+                                                <li><a href="blog-modren.html">Blog Modren W/O/S</a></li>
+                                                <li><a href="blog-modren-wls.html">Blog Modren W/L/S</a></li>
+                                                <li><a href="blog-modren-wrs.html">Blog Modren W/R/S</a></li>
+                                            </ul> -->
+                                </li>
+                                </ul>
+                                </li>
+
+
+                                <li class="sportsmagazine-megamenu-li"><a href="#">A PROPOS</a>
+                                    <ul class="sportsmagazine-megamenu">
+                                        <li class="row">
+                                            <div class="col-md-2">
+                                                <h4>Liens</h4>
+                                                <ul class="sportsmagazine-megalist">
+                                                    <!-- <li><a href="404.html">404 Error Page</a></li> -->
+                                                    <li><a href="faq.html">Politique QSE</a></li>
+                                                    <!-- <li><a href="login-register.html">Login Register</a></li>
+                                                    <li><a href="search-result.html">Search Result</a></li> -->
+                                                    <li><a href="contact-us.html">Contactez nous</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <h4>Le mot du Président</h4>
+                                                <div class="sportsmagazine-mega-text">
+                                                    <p>Mesdames, Messieurs, chers amis sportifs, Une nouvelle saison va débuter et nous mettons tout en œuvre pour l'aborder dans les meilleures conditions et nous espérons la plus belle possible… Notre
+                                                        volonté est de vous proposer une saison de qualité et de partager avec vous la passion pour le football.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <h4>Président du club</h4>
+                                                <a href="#" class="sportsmagazine-thumbnail">
+                                                    <img src="images/president.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <!--// MainHeader \\-->
+
+</header>
+<!--// Header \\-->

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="../extra-images/fav-icon.png" type="image/png">
+    <title>AS MINGASSANG</title>
+
+    <!-- Css Files -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/flaticon.css" rel="stylesheet">
+    <link href="../css/slick-slider.css" rel="stylesheet">
+    <link href="../css/fancybox.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <link href="../css/color.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <!--/!--[if lte IE 9]-->
+    <!-- <link rel="stylesheet" href="../../css/chosen.html"> -->
+    <!--[endif]--//-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!--// Main Wrapper \\-->
+    <div class="sportsmagazine-main-wrapper">
+
+        <%- include('./partials/head.ejs')  %> 
+
+		<!--// Main Content \\-->
+		<div class="sportsmagazine-main-content sportsmagazine-main-contentminus">
+            
+            <!--// Main Section \\-->
+            <div class="sportsmagazine-main-section sportsmagazine-thumb sportsmagazine-fixture-thumb">
+                <span class="thumb-transparent"></span>
+
+                <div class="container">
+                    <div class="row">
+
+                        <!-- <div class="col-md-4">
+                            <div class="sportsmagazine-thumb-team-one">
+                                <figure><img src="extra-images/thumb-team-oneimg.png" alt=""></figure>
+                                <section>
+                                    <h4>Yorkshire</h4>
+                                    <span>03 Mark Baily (21) </span>
+                                    <span>10 Jonathon Trott (17)</span>
+                                </section>
+                            </div>
+                        </div> -->
+                        <div class="col-md-12">
+                            <div class="sportmagazine-score-counter">
+                                <h1 style="color: white;">TOUS NOS ARTICLES </h1>
+                                <span style="text-transform: uppercase;">  </span>
+                                <!-- <p><span>79</span> <small>:</small> 73</p>
+                                <div id="sportsmagazine-countdown" class="sportsmagazine-countdown"> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4">
+                            <div class="sportsmagazine-thumb-team-one">
+                                <figure><img src="extra-images/thumb-team-twoimg.png" alt=""></figure>
+                                <section>
+                                    <h4>Sharks Club</h4>
+                                    <span>03 Mark Baily (21) </span>
+                                    <span>10 Jonathon Trott (17)</span>
+                                </section>
+                            </div>
+                        </div> -->
+                            
+                    </div>
+                </div>
+            </div>
+            <!--// Main Section \\-->
+            <div class="sportsmagazine-main-content">
+
+                <!--// Main Section \\-->
+                <div class="sportsmagazine-main-section sportsmagazine-blogmodren-full">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-md-12">
+                                <div class="sportsmagazine-blog sportsmagazine-blog-grid">
+                                    <ul class="row">
+                                        <% if(articles.length != 0) { %>
+                                            <% articles.forEach((doc, index) => { %>
+                                        <li class="col-md-4">
+                                            <figure>
+                                                <a href="/articles/<%= doc.id %>"><img src="<%= doc.data().imgUrl %>" alt=""></a>
+                                                <figcaption>
+                                                    <span><small>Article</small></span>
+                                                    <a href="/articles/<%= doc.id %>" class="sportsmagazine-link-btn"><i class="fa fa-link"></i></a>
+                                                </figcaption>
+                                            </figure>
+                                            <section>
+                                                <h2 style="overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                display: -webkit-box;
+                                                -webkit-line-clamp: 3; /* number of lines to show */
+                                                        line-clamp: 3; 
+                                                -webkit-box-orient: vertical;"><a href="/articles/<%= doc.id %>"><%= doc.data().titreArticle  %></a></h2>
+                                                <p style="overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                display: -webkit-box;
+                                                -webkit-line-clamp: 5; /* number of lines to show */
+                                                        line-clamp: 5; 
+                                                -webkit-box-orient: vertical;"><%= doc.data().descriptionArticle  %></p>
+                                            </section>
+                                            <div class="sportsmagazine-blog-grid-options">
+                                                <a href="/articles/<%= doc.id %>" class="sportsmagazine-blog-grid-thumb"><img src="../extra-images/favicon-32x32.png" alt=""><%= doc.data().auteurArticle  %> </a>
+                                                <ul>
+                                                    <li><i class="fa fa-thumbs-o-up"></i> <a href=""></a></li>
+                                                    <li><i class="fa fa-eye"></i> <a href=""></a></li>
+                                                    <li><i class="fa fa-share-alt"></i> <a href=""></a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <% }) %>
+                    <% } else { %>
+                        Pas d'article en ligne.
+                    <% } %>
+                                        
+                                    </ul>
+                                </div>
+                                <!--// Pagination \\-->
+                                <div class="sportsmagazine-pagination">
+                                  <ul class="page-numbers">
+                                     <li><a class="previous page-numbers" href="404.html"><span aria-label="Next"><i class="fa fa-angle-left"></i></span></a></li>
+                                     <li><span class="page-numbers current">1</span></li>
+                                     <li><a class="page-numbers" href="404.html">2</a></li>
+                                     <li><a class="page-numbers" href="404.html">3</a></li>
+                                     <li><a class="page-numbers" href="404.html">4</a></li>
+                                     <li><a class="next page-numbers" href="404.html"><span aria-label="Next"><i class="fa fa-angle-right"></i></span></a></li>
+                                  </ul>
+                                </div>
+                                <!--// Pagination \\-->
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                </div>
+                <!--// Main Section \\-->
+    
+            </div>
+			<!--// Main Section \\-->
+			
+			<!--// Main Section \\-->
+
+		</div>
+		<!--// Main Content \\-->
+
+        <div class="sportsmagazine-main-section ">
+                <div class="container ">
+                    <div class="row ">
+                        
+                        <div class="col-md-12 ">
+                           
+                            <div class="sportsmagazine-fancy-title-two "><h2>Nos Partenaires <span></span></h2></div>
+                            <div class="sportsmagazine-partner-slider ">
+                                <div> <a href="# "><img src="../images/fegafoot-logo.jpg " alt=" "></a> </div>
+                                <div> <a href="# "><img src="../images/ligue-woleu-ntem-logo.jpg " alt=" "></a> </div>
+                                <div> <a href="# "><img src="../images/club-sport-logo.jpg " alt=" "></a> </div>
+                                <div> <a href="# "><img src="../images/kom-consulting-logo.jpg " alt=" "></a> </div>
+                                <div> <a href="# "><img src="../images/Endurance Logo yellow.png " width="150 " alt=" "></a> </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Include footer -->
+            <%- include('./partials/footer.ejs') %> 
+    <!--// Main Wrapper \\-->
+
+    
+
+    
+
+
+	<!-- jQuery (necessary for JavaScript plugins) -->
+	<script type="text/javascript " src="../script/jquery.js "></script>
+    <script type="text/javascript " src="../script/bootstrap.min.js "></script>
+    <script type="text/javascript " src="../script/slick.slider.min.js "></script>
+    <script type="text/javascript " src="../script/jquery.countdown.min.js "></script>
+    <script type="text/javascript " src="../script/fancybox.pack.js "></script>
+    <script type="text/javascript " src="../script/isotope.min.js "></script>
+    <script type="text/javascript " src="../script/progressbar.js "></script>
+    <script type="text/javascript " src="../script/counter.js "></script>
+    <script type="text/javascript " src="../script/functions.js "></script>
+
+    <!-- Custom js scripts -->
+  </body>
+
+</html> 

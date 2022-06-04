@@ -1,0 +1,38 @@
+<div class="widget widget_team_ranking" style="margin-top: 24px;">
+    <div class="sportsmagazine-fancy-title "><h2>ÉVENEMENTS</h2></div>
+                            <ul>
+                                <% if(activites.length != 0) { %>
+                                    <% activites.forEach((doc, index) => { %>
+                                        <li class="widget-injuries ">
+                                   
+                                            <div class="popular_news_text ">
+                                                <small>Assemblée general</small>
+                                                <img src="images/218950156_4236822536385294_6224032274378857896_n.jpg " alt=" " />
+                                                <a href="blog-detail.html ">Mairie de Nzeng Ayong</a>
+                                                <time datetime="2008-02-14 20:00 ">18 Juillet 2021</time>
+                                            </div>
+                                        </li>
+
+                                <% }) %>
+                                <% } else { %>
+                                    Pas d'article en ligne.
+                                <% } %>
+                               
+                                <!-- <li class="widget-injuries ">
+                                    <span>01</span>
+                                    <div class="popular_news_text ">
+                                        <small>Coupe du Gabon</small>
+                                        <a href="blog-detail.html ">Participation a la coupe du Gabon</a>
+                                        <time datetime="2008-02-14 20:00 ">21 Décembre 2017</time>
+                                    </div>
+                                </li>
+                                <li class="widget-theleague ">
+                                    <span>02</span>
+                                    <div class="popular_news_text ">
+                                        <small>Championnat du Woleu Ntem</small>
+                                        <a href="blog-detail.html ">Qualifications</a>
+                                        <time datetime="2008-02-14 20:00 ">14 Octobre 2020</time>
+                                    </div>
+                                </li> -->
+                            </ul>
+</div>
